@@ -3,4 +3,32 @@
 
 הפרוייקט לקוח מפה 
 
-https://www.youtube.com/watch?v=FiGmAI5e91M&list=PLillGF-RfqbY3c2r0htQyVbDJJoBFE6Rb&index=2
+https://www.youtube.com/watch?v=FiGmAI5e91M&list=PLillGF-RfqbY3c2r0htQyVbDJJoBFE6Rb&index=2\
+
+
+התקנת תלויות :
+
+npm i -D tailwindcss postcss-cli autoprefixer
+
+התקנת קובץ הקונפיגורציה של טיילווינד :
+------------------------------------------
+npx tailwind init tailwind.js --full
+
+התקנת קובץ ההגדרות של postcss
+--------------------------------
+touch postcss.config.js 
+
+כל ההסברים בבלוג הבא שהוא צירף :
+----------------------------------
+https://www.smashingmagazine.com/2020/02/tailwindcss-react-project/
+
+autoprefixer -- מיייצר בקובץ ה CSS 
+[main.css] -- קוד הקדמה לדפדפנים השונים 
+
+כמו זה למשל :
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
